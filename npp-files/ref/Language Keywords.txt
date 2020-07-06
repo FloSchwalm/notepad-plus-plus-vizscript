@@ -1,34 +1,36 @@
-Sub
-End Sub
-Exit Sub
-Dim
 As
-If
-Then
-Else
-ElseIf
-End If
-For
-To
-Next
-Exit For
-Step
-For Each
-In
-Structure
-End Structure
-Function
-End Function
-Exit Function
-ByVal
 ByRef
-Do
-While
-Until
-Loop
-Exit Do
-Select Case
+ByVal
 Case
 Case Else
 Case Is
+Dim
+Do
+Else
+ElseIf
+End Function
+End If
 End Select
+End Structure
+End Sub
+Exit Do
+Exit For
+Exit Function
+Exit Sub
+False
+For
+For Each
+Function
+If
+In
+Loop
+Next
+Select Case
+Step
+Structure
+Sub
+Then
+To
+True
+Until
+While
