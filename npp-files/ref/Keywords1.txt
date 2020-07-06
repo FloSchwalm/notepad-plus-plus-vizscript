@@ -1,26 +1,31 @@
-And
 As
 ByRef
 ByVal
 Case
+Case Else
+Case Is
 Dim
 Do
-Each
 Else
 ElseIf
-End
-Exit
+End Function
+End If
+End Select
+End Structure
+End Sub
+Exit Do
+Exit For
+Exit Function
+Exit Sub
 False
 For
+For Each
 Function
 If
 In
-Is
 Loop
 Next
-Not
-Or
-Select
+Select Case
 Step
 Structure
 Sub
