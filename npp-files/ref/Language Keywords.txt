@@ -1,0 +1,34 @@
+Sub
+End Sub
+Exit Sub
+Dim
+As
+If
+Then
+Else
+ElseIf
+End If
+For
+To
+Next
+Exit For
+Step
+For Each
+In
+Structure
+End Structure
+Function
+End Function
+Exit Function
+ByVal
+ByRef
+Do
+While
+Until
+Loop
+Exit Do
+Select Case
+Case
+Case Else
+Case Is
+End Select
