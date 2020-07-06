@@ -1,0 +1,6 @@
+Cross
+Mod
+Not
+And
+Or
+Xor
