@@ -140,12 +140,6 @@ GetNumberOfActiveLiveChannel
 GetNumberOfClipChannel
 GetNumberOfLiveChannel
 GetNumberOfTimecodeSources
-GetParameterBool
-GetParameterColor
-GetParameterContainer
-GetParameterDouble
-GetParameterInt
-GetParameterString
 GetProgressive
 GetRGB
 GetRGB8
