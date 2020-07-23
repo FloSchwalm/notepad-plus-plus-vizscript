@@ -391,9 +391,5 @@ Y
 Year
 Z
 ZBuffer
-offset
-x
 xy
 xyz
-y
-z
