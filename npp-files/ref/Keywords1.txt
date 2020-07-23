@@ -1,34 +1,14 @@
 As
 ByRef
 ByVal
-Case
-Case Else
-Case Is
 Dim
-Do
-Else
-ElseIf
-End Function
-End If
-End Select
-End Structure
-End Sub
-Exit Do
-Exit For
-Exit Function
-Exit Sub
+"Exit Do"
+"Exit For"
+"Exit Function"
+"Exit Sub"
 False
-For
-For Each
-Function
-If
 In
-Loop
-Next
-Select Case
 Step
-Structure
-Sub
 Then
 To
 True
