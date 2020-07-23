@@ -1,0 +1,7 @@
+Functions/Subs:
+Find: (?:(?:Sub|Function)[ ]*)?(\w+).*
+Replace: $1
+
+Properties:
+Find: (\w+).*
+Replace: $1
