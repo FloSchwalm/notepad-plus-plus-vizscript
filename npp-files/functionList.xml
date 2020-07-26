@@ -106,6 +106,8 @@
 			<association id=    "universe_basic"      userDefinedLangName="UniVerse BASIC" />
 			<association id=    "universe_basic"      ext=".bas"                           />
 			<!-- ======================================================================== -->
+			<association id=   "vizscript_function"   userDefinedLangName="VizScript"      />
+			<!-- ======================================================================== -->
 		</associationMap>
 		<parsers>
 
@@ -1447,6 +1449,38 @@
 					<functionName>
 						<nameExpr expr="[\w_-]+\s*section"/>
 				   </functionName>
+				</function>
+			</parser>
+
+			<!-- =========================================================== [ VizScript ] -->
+
+			<parser
+				displayName="VizScript"
+				id         ="vizscript_function"
+				commentExpr="(?x)											# Utilize inline comments (see `RegEx - Pattern Modifiers`)
+								(?m-s:(?&lt;=^([^\x22]|\x22[^\x22]*\x22)*)\x27.*$)			# Single Line Comment
+							"
+			>
+				<function
+					mainExpr="(?x)											# Utilize inline comments (see `RegEx - Pattern Modifiers`)
+						(?im-s:^[ \t]*(?:Sub|Function)[ \t]+([A-Za-z_][\w_]*)\([^\)\r\n]*\))
+						"
+				>
+					<functionName>
+						<nameExpr expr="(?x)									# Utilize inline comments (see `RegEx - Pattern Modifiers`)
+								(?im-s:(?:Sub|Function)[^\)]+\))					# This regex gets a function/sub name with parameters
+							" />
+						<!--
+						<nameExpr expr="(?x)									# Utilize inline comments (see `RegEx - Pattern Modifiers`)
+								(?im-s:((?&lt;=Function[ \t]).*)|((?&lt;=Sub[ \t]).*))			# This regex gets a function/sub name with parameters. but without function/sub keyword
+							" />
+						-->
+						<!--
+						<nameExpr expr="(?x)									# Utilize inline comments (see `RegEx - Pattern Modifiers`)
+								(?im-s:[\w_]+(?=\())							# Activate this regex to only get function/sub names
+							" />
+						-->
+					</functionName>
 				</function>
 			</parser>
 
