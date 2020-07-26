@@ -1,5 +1,5 @@
 Case
-"Case Else"
-"Case Is"
+'Case Else'
+'Case Is'
 Else
 ElseIf

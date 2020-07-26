@@ -1,6 +1,6 @@
 For
-"For Each"
-"Select Case"
+'For Each'
+'Select Case'
 Do
 Function
 If
