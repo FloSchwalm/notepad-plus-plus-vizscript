@@ -1463,12 +1463,12 @@
 			>
 				<function
 					mainExpr="(?x)											# Utilize inline comments (see `RegEx - Pattern Modifiers`)
-						(?im-s:^[ \t]*(?:Sub|Function)[ \t]+([A-Za-z_][\w_]*)\([^\)\r\n]*\))
+						(?im-s:^[ \t]*(?:Sub|Function)[ \t]+([A-Za-z_][\w_]*)\([^\)\r\n]*\)([ \t]+As[ \t]+\w+)?)
 						"
 				>
 					<functionName>
 						<nameExpr expr="(?x)									# Utilize inline comments (see `RegEx - Pattern Modifiers`)
-								(?im-s:(?:Sub|Function)[^\)]+\))					# This regex gets a function/sub name with parameters
+								(?im-s:(?:Sub|Function)[^\)]+\)([ \t]+As[ \t]+\w+)?)			# This regex gets a function/sub name with parameters
 							" />
 						<!--
 						<nameExpr expr="(?x)									# Utilize inline comments (see `RegEx - Pattern Modifiers`)
